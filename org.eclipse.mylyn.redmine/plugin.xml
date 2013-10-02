@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.mylyn.tasks.ui.repositories">
+      <connectorCore
+            class="org.eclipse.mylyn.redmine.RedmineRepositoryConnector"
+            name="Redmine Repository Connector">
+      </connectorCore>
+      <connectorUi
+            brandingIcon="res/Redmine_logo_16.png"
+            class="org.eclipse.mylyn.redmine.RedmineRepositoryConnectorUi"
+            overlayIcon="res/Redmine_logo_transparent_8.png">
+      </connectorUi>
+   </extension>
+
+</plugin>

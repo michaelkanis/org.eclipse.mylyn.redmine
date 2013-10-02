@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Mylyn-Connector for Redmine
+Bundle-SymbolicName: org.eclipse.mylyn.redmine;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.redmine.ui.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.mylyn.tasks.core,
+ org.eclipse.mylyn.tasks.ui,
+ org.eclipse.mylyn.commons.net,
+ com.taskadapter.redmineapi,
+ org.eclipse.ui.forms,
+ org.eclipse.mylyn.commons.core;bundle-version="3.8.3",
+ org.eclipse.mylyn.commons.ui;bundle-version="3.8.3",
+ org.eclipse.mylyn.commons.workbench
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: bin/
+Bundle-Vendor: Michael Kanis
