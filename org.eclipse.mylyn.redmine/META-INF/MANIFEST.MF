@@ -9,12 +9,17 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.mylyn.tasks.core,
  org.eclipse.mylyn.tasks.ui,
  org.eclipse.mylyn.commons.net,
- com.taskadapter.redmineapi,
  org.eclipse.ui.forms,
  org.eclipse.mylyn.commons.core;bundle-version="3.8.3",
  org.eclipse.mylyn.commons.ui;bundle-version="3.8.3",
- org.eclipse.mylyn.commons.workbench
+ org.eclipse.mylyn.commons.workbench,
+ org.slf4j.api;bundle-version="1.7.2",
+ org.apache.commons.logging;bundle-version="1.1.1"
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: bin/
+Bundle-ClassPath: .,
+ lib/redmine-java-api.jar,
+ lib/json-20090211.jar,
+ lib/httpclient-4.2.jar,
+ lib/httpcore-4.2.jar
 Bundle-Vendor: Michael Kanis
